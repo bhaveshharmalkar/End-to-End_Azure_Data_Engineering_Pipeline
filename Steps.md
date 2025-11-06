@@ -37,11 +37,3 @@
 29. After that create New notebook.
 
 databricks-scope
-
-```
-spark.conf.set("fs.azure.account.auth.type.olist1storageaccount.dfs.core.windows.net", "OAuth")
-spark.conf.set("fs.azure.account.oauth.provider.type.olist1storageaccount.dfs.core.windows.net", "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider")
-spark.conf.set("fs.azure.account.oauth2.client.id.olist1storageaccount.dfs.core.windows.net", "<application_id>")
-spark.conf.set("fs.azure.account.oauth2.client.secret.olist1storageaccount.dfs.core.windows.net", "<secret>")
-spark.conf.set("fs.azure.account.oauth2.client.endpoint.olist1storageaccount.dfs.core.windows.net", "https://login.microsoftonline.com/<directory_id>/oauth2/token")
-```
