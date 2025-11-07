@@ -38,4 +38,11 @@ Used this [resource](https://learn.microsoft.com/en-us/azure/databricks/connect/
 33. After that create New notebook as `Databricks_Spark`.
 
 
+### Create synapse
+34. Name managed group as `olist-synapse-rg`, workspace name as `synapse-workspace-olist-project`, create new account name for adls gen2 as `synapsestorageaccount2` and file system as `synapsefilesystem` then create sql server admin login as `synapsesql`. Then create and launch Synapse Studio.
+35. Now go to synapse storage account as `synapsestorageaccount2` then > `synapsefilesystem` and upload random csv. Now come synapse studio > Data > Linked > `synapsefilesystem` > Right click on csv file > New sql script > Top 100 rows and run it.
+36. Then for get data from adls old storage account go to `olist1storageaccount` > IAM > Add role assigment > Search for Storage Blob Data Contributor > Select it > Managed indentiy > Select members > Synapse workspace > Select workspace name Then ok. After that > USer,group or service principle > Select member > Selec your name. > Create.
+37. Come on synapse create new sql `serverless` database. Then create new sql script then change storage account and file system name accordingly.    
+
+https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-cetas
 
